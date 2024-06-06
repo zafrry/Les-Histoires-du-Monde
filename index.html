@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les histoires du monde</title>
+    <meta
+      name="description"
+      content="Voici la plus grande librairie du Metaverse !"
+    />
+    <meta name="keywords" content="librairie, metaverse, college" />
+    <link rel="shortcut icon" href="./Images/ampoule.png" type="image/x-icon" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <img id="logo" src="./Images/logo.png" alt="logo" />
+      <h1>Les histoires du monde</h1>
+
+      <ol class="nav-list">
+        <li class="nav"><a href="#maroc">Le Maroc</a></li>
+        <li class="nav"><a href="#egypte">L'Egypte</a></li>
+        <li class="nav"><a href="#grece">La Grece</a></li>
+        <li class="nav_contact"><a href="#contact">Contact</a></li>
+      </ol>
+
+      <button id="menu-toggle">☰</button>
+      <ul id="dropdown" style="display: none">
+        <li><a href="#maroc">Le Maroc</a></li>
+        <li><a href="#egypte">L'Égypte</a></li>
+        <li><a href="#grece">La Grèce</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="caroussel">
+        <div class="slides fade">
+          <div class="maroc">
+            <div class="resume">
+              <h2>Premières traces de peuplement</h2>
+              <p>
+                L'attrait des richesses provenant du commerce du Sud (le Sahara)
+                vers le Nord (l'Occident) va attiser les convoitises de diverses
+                tribus avec pour ville carrefour Marrakech, qui deviendra
+                naturellement la capitale de certaines dynasties marocaines
+                (Almoravides, Almohades, Saadiens) ; c'est la raison pour
+                laquelle toute l'histoire du Maroc (des Idrissides aux
+                Alaouites) fut marquée par le commerce des richesses du Sud vers
+                le Nord. L'histoire et l'origine du Maroc furent et restent
+                marquées par le lien avec le Sahara.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slides fade">
+          <div class="egypte">
+            <div class="resume">
+              <h2>Égypte préhistorique</h2>
+              <p>
+                Le sud de la vallée du Nil reste marqué plus longtemps par le
+                nomadisme, sans exclure des formes d'élevage. La sédentarisation
+                intervient vers 4400 avant notre ère, avec la culture dite de
+                Badari caractérisé par un artisanat riche et varié, la pratique
+                de l'agriculture et des séries de nécropoles élaborées. Ces
+                groupes devaient être en relation avec le Sinaï et le Soudan.
+                Cette période appelée « prédynastique » s'étend environ de 5000
+                à 3000 avant notre ère.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slides fade">
+          <div class="grece">
+            <div class="resume">
+              <h2>Préhistoire</h2>
+              <p>
+                Quelques sites paléolithiques sont aujourd'hui connus en Grèce.
+                Les traces de présence humaine les plus anciennes remontent à
+                700 000 BP dans la péninsule chalcidique, où un crâne de
+                pré-néandertalien a été découvert à Petrálona (Πετράλωνα). Par
+                ailleurs, des traces plus récentes, datant de 40 000 av. J.-C.
+                ont été retrouvées. Trois grottes de la vallée du Louros furent
+                occupées durant le Paléolithique. Un crâne d'homme de Néandertal
+                fut découvert dans les environs de Thessalonique.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+      <br />
+      <div style="display: none">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </main>
+
+    <footer>
+      <div id="contact" class="contact-section">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="post">
+          <div>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="subject">Sujet:</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div>
+            <button type="submit">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
